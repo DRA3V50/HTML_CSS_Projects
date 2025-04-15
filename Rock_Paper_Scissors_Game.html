@@ -1,0 +1,89 @@
+<!DOCTYPE html> <!-- Declares HTML5 document -->
+<html lang="en"> <!-- Page is in English -->
+<head>
+    <title>Rock || Paper || Scissors - Game!</title> <!-- Tab title -->
+    <style>
+        body {
+            background-color: brown; /* Page background */
+            border: 25px; /* Border (not styled, so invisible) */
+            text-align: center; /* Centers text */
+            padding: 55px; /* Space inside the body */
+            font-family: Georgia, 'Times New Roman', Times, serif; /* Font style */
+        }
+        h1 {
+            margin-bottom: 15px; /* Space under title */
+        }
+        .choices {
+            margin: 25px 0; /* Spacing above and below buttons */
+        }
+        .btn {
+            font-size: 25px; /* Button text size */
+            padding: 15px 10px; /* Button inner spacing */
+            margin: 12px; /* Button outer spacing */
+            cursor: pointer; /* Pointer cursor on hover */
+            border: firebrick; /* Border color (missing style) */
+            border-radius: 10px; /* Rounded corners */
+            background: gold; /* Background color */
+            color: darkturquoise; /* Text color */
+            transition: background 0.5s; /* Smooth background change */
+        }
+        .btn:hover {
+            background: purple; /* Background on hover */
+        }
+        #result {
+            margin-top: 15px; /* Space above result */
+            font-size: 20px; /* Result font size */
+        }
+        #score {
+            margin-top: 15px; /* Space above score */
+            font-size: 20px; /* Score font size */
+            color: burlywood; /* Score color */
+        }
+    </style>
+</head>
+<body>
+    <h1>🪨 Rock, 📄 Paper, ✂️ Scissors</h1> <!-- Game heading -->
+    <p>Choose your move:</p> <!-- Instruction text -->
+
+    <div class="choices"> <!-- Button container -->
+        <button class="btn" onclick="play('Rock')">🪨 Rock</button> <!-- Rock choice -->
+        <button class="btn" onclick="play('Paper')">📄 Paper</button> <!-- Paper choice -->
+        <button class="btn" onclick="play('Scissors')">✂️ Scissors</button> <!-- Scissors choice -->
+    </div>
+
+    <div id="result">Let The Game Begin!</div> <!-- Initial result text -->
+    <div id="score">You: 0 || BOT: 0</div> <!-- Initial score -->
+
+    <script>
+        const resultDisplay = document.getElementById("result"); // Result element
+        const scoreDisplay = document.getElementById("score"); // Score element
+        let userScore = 0; // Player score
+        let computerScore = 0; // Bot score
+
+        function play(userChoice) { // Main function when player clicks a move
+            const choices = ['Rock', 'Paper', 'Scissors']; // Possible moves
+            const computerChoice = choices[Math.floor(Math.random() * 3)]; // Random bot move
+            let result = ""; // Message to display
+
+            if (userChoice === computerChoice) { // If draw
+                result = `🤝 Draw! Both chose: ${userChoice}.`; // Draw message
+            } else if (
+                (userChoice === 'Rock' && computerChoice === 'Scissors') || 
+                (userChoice === 'Paper' && computerChoice === 'Rock') ||
+                (userChoice === 'Scissors' && computerChoice === 'Paper')       
+            ) { // If player wins
+                result = `✅ You Win! ${userChoice} beats ${computerChoice}.`; // Win message
+                userScore++; // Add to player's score
+            } else { // If bot wins
+                result = `❌ You Lost! ${computerChoice} beats ${userChoice}.`; // Lose message
+                computerScore++; // Add to bot's score
+            }
+
+            resultDisplay.textContent = result; // Show result
+            scoreDisplay.textContent = `You: ${userScore} || BOT: ${computerScore}`; // Update score
+        }
+    </script>
+</body>
+</html>
+
+    
