@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  height: 100vh; /* full viewport height */
+  background: linear-gradient(to bottom, #1a0000, #330000); /* dark red gradient */
+  font-family: 'Courier New', monospace; /* techy monospace font */
+  color: #ff3b1f; /* bright red text color */
+  display: flex; /* center content horizontally and vertically */
+  justify-content: center;
+  align-items: center;
+  user-select: none; /* prevent text selection */
+}
+
+body::before {
+  content:
+    "!!! LAB BREACH ALERT !!!\A\A" /* Main alert heading with emphasis */
+    "LEVEL 5 CONTAINMENT FAILURE\A" /* Critical status level */
+    "Bio-Leak\A\A"       /* Warning about infection spreading */
+    "IMMEDIATE EVACUATION\A"        /* Urgent action required */
+    "SYSTEM OVERRIDE IN PROGRESS";          /* Final warning of failure */
+  
+  white-space: pre;
+  
+  background: rgba(40, 0, 0, 0.95); /* semi-transparent dark red background */
+  border: 3px solid #ff3b1f; /* bright red border */
+  box-shadow: 0 0 90px #ff3b1f; /* glowing red shadow around the box */
+  padding: 40px 60px; /* space inside the box */
+  width: 520px; /* fixed width for neat layout */
+  
+  font-size: 26px; /* readable large text */
+  line-height: 2.4; /* spacing between lines */
+  
+  text-shadow:
+    0 0 15px #ff3b1f,
+    0 0 35px #ff3b1f,
+    0 0 60px #cc2c17; /* strong glowing effect on text */
+  
+  letter-spacing: 2.5px; /* spacing between letters for a tech look */
+  text-align: center; /* center the text inside the box */
+  
+  animation: flicker 1.5s infinite alternate; /* flicker effect to simulate glitch */
+  display: block; /* show the box */
+}
+
+@keyframes flicker {
+  0%, 100% {
+    opacity: 1; /* fully visible */
+    text-shadow:
+      0 0 20px #ff3b1f,
+      0 0 40px #ff3b1f,
+      0 0 70px #cc2c17; /* strong glow */
+  }
+  50% {
+    opacity: 0.7; /* slightly dim */
+    text-shadow:
+      0 0 8px #b32a13,
+      0 0 20px #b32a13,
+      0 0 40px #7f1c0e; /* weaker glow */
+  }
+}
