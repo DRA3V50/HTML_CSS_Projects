@@ -26,5 +26,3 @@ This repository contains simple web projects built with HTML and CSS. Some proje
 No additional setup required.
 
 ---
-
-Feel free to explore and modify the code to learn more about front-end web development.
