@@ -1,6 +1,6 @@
-# HTML Projects
+# HTML_CSS_Projects
 
-This folder contains HTML files that do not require any installations or dependencies.
+This repository contains simple web projects built with HTML and CSS. Some projects also include JavaScript for added interactivity.
 
 ---
 
@@ -12,14 +12,19 @@ This folder contains HTML files that do not require any installations or depende
 - **Rock_Paper_Scissors_Game.html**  
   A classic Rock-Paper-Scissors game built with HTML and JavaScript.
 
+- **Lab_Breach_Alert.html**  
+  A visual lab breach alert screen styled with glowing red text using HTML and CSS. This is a static design with no interactivity.
+
 ---
 
 ## How to Use
 
-Simply open the `.html` files in any modern web browser to run the projects.
+1. Download or clone this repository.  
+2. Open any `.html` file in a modern web browser.  
+3. If a project has a `.css` file, keep it in the same folder as the HTML file.
 
-No additional setup or installations needed.
+No additional setup required.
 
 ---
 
-Feel free to explore and modify the code to learn more about web development!
+Feel free to explore and modify the code to learn more about front-end web development.
