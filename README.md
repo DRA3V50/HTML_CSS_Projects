@@ -1,6 +1,6 @@
 # HTML_CSS_Projects
 
-This repository contains simple web projects built with HTML and CSS. Some projects also include JavaScript for added interactivity.
+This repository contains simple web projects built with **HTML** and **CSS**, with some projects including **JavaScript** to add interactivity. Each project can be opened directly in a modern web browser—no installation or setup is required.
 
 ---
 
