@@ -14,7 +14,7 @@ body::before {
   content:
     "!!! LAB BREACH ALERT !!!\A\A" /* Main alert heading with emphasis */
     "LEVEL 5 CONTAINMENT FAILURE\A" /* Critical status level */
-    "Bio-Leak\A\A"       /* Warning about infection spreading */
+    "Cyber-Leak\A\A"       /* Warning about infection spreading */
     "IMMEDIATE EVACUATION\A"        /* Urgent action required */
     "SYSTEM OVERRIDE IN PROGRESS";          /* Final warning of failure */
   
@@ -56,4 +56,5 @@ body::before {
       0 0 20px #b32a13,
       0 0 40px #7f1c0e; /* weaker glow */
   }
+
 }
