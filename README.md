@@ -12,7 +12,7 @@ This repository contains simple web projects built with **HTML** and **CSS**, wi
 - **Rock_Paper_Scissors_Game.html**  
   A classic Rock-Paper-Scissors game built with HTML and JavaScript.
 
-- **Lab_Breach_Alert.html**  
+- **Website_Leak.html**  
   A visual lab breach alert screen styled with glowing red text using HTML and CSS. This is a static design with no interactivity.
 
 ---
